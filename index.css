@@ -1,0 +1,168 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #be3c3c;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column; 
+}
+
+/* Contenedor principal */
+#container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 1%; 
+    margin-top: 1%;
+}
+
+/* Títulos */
+h1 {
+    color: #be3c3c;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+}
+
+/* Etiquetas de entrada */
+label {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Entradas de texto y selectores */
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin: 5% 0;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: solid 0.5px;
+}
+
+/* Botón de calcular */
+button {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    padding: 12px 35px;
+    background-color: #be3c3c;
+    border: 3px;
+    border-radius: 30px;
+    border-color: #be3c3c;
+    border-style: solid;
+}
+
+/* Estilo del botón al pasar el ratón */
+button:hover {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: #be3c3c;
+    padding: 12px 35px;
+    background-color: white;
+    border: 3px;
+    border-radius: 30px;
+    border-color: #be3c3c;
+    border-style: solid;
+}
+
+/* Resultados */
+#output {
+    font-size: 18px;
+}
+
+/* Estilos responsivos para dispositivos móviles */
+@media (max-width: 500px) {
+    #container {
+        padding: 10px;
+    }
+    input#horas, select#category {
+        font-size: 14px;
+        width: 100%;
+        margin-right: 0;
+    }
+    button {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+}
+
+/* Imagen del banner */
+#banner {
+    max-width: 100%;
+    height: auto;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    border: 5px solid #fff; /* Añade un borde blanco alrededor de la imagen */
+}
+
+/* Contenedor de suma de horas extras */
+#sumCalculator {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
+
+/* Estilos responsivos para dispositivos móviles en la calculadora de suma */
+@media (max-width: 500px) {
+    #sumCalculator {
+        padding: 10px;
+        margin: 0 auto;
+    }
+    /* Otras reglas de estilo para dispositivos móviles aquí */
+}
+
+/* Título de la calculadora de suma */
+#sumCalculator h2 {
+    color: #be3c3c;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+}
+
+/* Etiquetas en la calculadora de suma */
+#sumCalculator label {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Lista de horas extras sumadas */
+#sumList {
+    padding: 1%;
+    font-size: 15px;
+}
+
+/* Resultado de la suma */
+#sumOutput {
+    font-size: 18px;
+}
+
+/* Firma en la esquina inferior derecha */
+#firma {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    color: rgb(218, 210, 210);
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
