@@ -13,3 +13,7 @@ para cada tipo, lo que facilita el seguimiento y la obtención de la suma final 
 En resumen, esta herramienta proporciona a los trabajadores la autonomía necesaria para calcular cuanto le van a pagar por sus horas extra de 
 manera personalizada, al tiempo que garantiza la capacidad de gestionar diferentes tipos de horas extras de manera eficiente y precisa. La calculadora
 almacenará y procesará la información de manera que el usuario obtenga un resultado final claro y completo.
+
+
+![image](https://github.com/ManuGalan/Calculadora-Horas-Extras/assets/96147300/0b600186-f400-4e48-bdff-d737ff98950c)
+
