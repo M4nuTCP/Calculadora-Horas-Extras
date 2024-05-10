@@ -1,12 +1,12 @@
 # Calculadora-Horas-Extras
 
-Overtime Calculator for Workers
+Calculadora de Horas Extras para Trabajadores
 
-This project has been developed with the purpose of enabling workers to autonomously calculate the gross pay for their overtime hours. Its operation is straightforward and efficient: the user enters their job category, the number of overtime hours worked, and the corresponding type of overtime. These details are stored in a calculator located at the bottom of the tool, providing the user with the gross amount based on their job category, overtime type, and total overtime hours.
+Este proyecto ha sido desarrollado con el propósito de permitir a los trabajadores calcular de manera autónoma el pago bruto por sus horas extras. Su operación es directa y eficiente: el usuario introduce su categoría laboral, el número de horas extras trabajadas y el tipo correspondiente de horas extras. Estos detalles se almacenan en una calculadora ubicada en la parte inferior de la herramienta, proporcionando al usuario el monto bruto basado en su categoría laboral, tipo de horas extras y total de horas extras.
 
-The rationale behind the calculator's storage function is to provide a solution for workers with different types of overtime. This feature allows users to systematically record and organize accumulated overtime hours for each type, facilitating tracking and obtaining the final sum of gross pay.
+La razón detrás de la función de almacenamiento de la calculadora es ofrecer una solución para trabajadores con diferentes tipos de horas extras. Esta característica permite a los usuarios registrar y organizar sistemáticamente las horas extras acumuladas para cada tipo, facilitando el seguimiento y la obtención de la suma final del pago bruto.
 
-In summary, this tool empowers workers to calculate their personalized overtime pay autonomously, ensuring the ability to manage different types of overtime efficiently and accurately. The calculator will store and process information in a way that provides the user with a clear and comprehensive final result.
+En resumen, esta herramienta empodera a los trabajadores para calcular su pago por horas extras de manera personalizada y autónoma, asegurando la capacidad de gestionar diferentes tipos de horas extras de manera eficiente y precisa. La calculadora almacenará y procesará la información de manera que proporciona al usuario un resultado final claro y comprensivo.
 
 
 ![image](https://github.com/ManuGalan/Calculadora-Horas-Extras/assets/96147300/0b600186-f400-4e48-bdff-d737ff98950c)
