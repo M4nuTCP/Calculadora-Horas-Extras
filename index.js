@@ -1,4 +1,3 @@
-// Declarar un array para almacenar los resultados de las horas extras calculadas
 const resultadosHorasExtras = [];
 
 
@@ -7,15 +6,12 @@ function calculate() {
     const category = parseInt(document.getElementById('category').value);
     const menu = parseInt(document.getElementById('menu').value);
     let rate = 0;
-    let outputText = "";
     let explanationText = "";
-
+    let outputText = "";
+    
     const HorasTecnico = 16.20;
     const HorasControl = 14.48;
-
-    let tipoHoraExtra = ""; // Agregar esta variable
-    let montoBruto = 0; // Agregar esta variable
-
+    
     if (category === 1) {
         switch (menu) {
             case 1:
@@ -23,24 +19,24 @@ function calculate() {
                 explanationText = "Hora Extra; Valor de la hora extra normal.";
                 break;
             case 2:
-                rate = (HorasTecnico + (HorasTecnico * 0.30));
+                rate = HorasTecnico * 1.30; // 21.06 / 16.20
                 explanationText = "Hora Extra Nocturna; Son las comprendidas entre las 22:00 h y las 06:00 h del día laborable. Valor de la hora extra normal + 30%.";
                 break;
             case 3:
-                rate = (HorasTecnico + (HorasTecnico * 0.35));
+                rate = HorasTecnico * 1.35; // 21.87 / 16.20
                 explanationText = "Hora Extra de Sábado; Son las comprendidas entre las 06:00 h y las 22:00 h del sábado. Valor de la hora extra normal + 35%.";
                 break;
             case 4:
-                rate = (HorasTecnico + (HorasTecnico * 0.65));
-                explanationText = "Hora Extra Sábado-Nocturna; Son las comprendidas entre las 00:00 h a las 06:00 h del sábado, y de las 22:00 h a las 24:00 h del sábado. Valor de la hora extra de sábado + 30%.";
+                rate = HorasTecnico * 1.75493; // 28.43 / 16.20
+                explanationText = "Hora Extra Sábado-Nocturna; Son las comprendidas entre las 22:00 h a las 24:00 h y de las 00:00 h a las 06:00 h del sábado. Valor de la hora extra de sábado + 75%.";
                 break;
             case 5:
-                rate = (HorasTecnico + (HorasTecnico * 0.75));
+                rate = HorasTecnico * 1.75; // 28.35 / 16.20
                 explanationText = "Hora Extra Festiva; Son las comprendidas entre las 06:00 h y las 22:00 h del día festivo. Valor de la hora extra normal + 75%.";
                 break;
             case 6:
-                rate = (HorasTecnico + (HorasTecnico * 1.05));
-                explanationText = "Hora Extra Festiva-Nocturna; Son las comprendidas de las 00:00 h a las 06:00 h del día festivo, y de las 22:00 h a las 24:00 h del día festivo. Valor de la hora Extra festiva + 30%.";
+                rate = HorasTecnico * 2.27530; // 36.86 / 16.20
+                explanationText = "Hora Extra Festiva-Nocturna; Son las comprendidas de las 00:00 h a las 06:00 h del día festivo, y de las 22:00 h a las 24:00 h del día festivo. Valor de la hora extra festiva + 127%.";
                 break;
             default:
                 outputText = "Opción no válida";
@@ -52,24 +48,24 @@ function calculate() {
                 explanationText = "Hora Extra; Valor de la hora extra normal.";
                 break;
             case 2:
-                rate = (HorasControl + (HorasControl * 0.30));
+                rate = HorasControl * 1.29972; // 18.82 / 14.48
                 explanationText = "Hora Extra Nocturna; Son las comprendidas entre las 22:00 h y las 06:00 h del día laborable. Valor de la hora extra normal + 30%.";
                 break;
             case 3:
-                rate = (HorasControl + (HorasControl * 0.35));
+                rate = HorasControl * 1.35013; // 19.55 / 14.48
                 explanationText = "Hora Extra de Sábado; Son las comprendidas entre las 06:00 h y las 22:00 h del sábado. Valor de la hora extra normal + 35%.";
                 break;
             case 4:
-                rate = (HorasControl + (HorasControl * 0.65));
-                explanationText = "Hora Extra Sábado-Nocturna; Son las comprendidas entre las 00:00 h a las 06:00 h del sábado, y de las 22:00 h a las 24:00 h del sábado. Valor de la hora extra de sábado + 30%.";
+                rate = HorasControl * 1.75483; // 25.41 / 14.48
+                explanationText = "Hora Extra Sábado-Nocturna; Son las comprendidas entre las 22:00 h a las 24:00 h y de las 00:00 h a las 06:00 h del sábado. Valor de la hora extra de sábado + 75%.";
                 break;
             case 5:
-                rate = (HorasControl + (HorasControl * 0.75));
+                rate = HorasControl * 1.75; // 25.34 / 14.48
                 explanationText = "Hora Extra Festiva; Son las comprendidas entre las 06:00 h y las 22:00 h del día festivo. Valor de la hora extra normal + 75%.";
                 break;
             case 6:
-                rate = (HorasControl + (HorasControl * 1.05));
-                explanationText = "Hora Extra Festiva-Nocturna; Son las comprendidas de las 00:00 h a las 06:00 h del día festivo, y de las 22:00 h a las 24:00 h del día festivo. Valor de la hora Extra festiva + 30%.";
+                rate = HorasControl * 2.27486; // 32.94 / 14.48
+                explanationText = "Hora Extra Festiva-Nocturna; Son las comprendidas de las 00:00 h a las 06:00 h del día festivo, y de las 22:00 h a las 24:00 h del día festivo. Valor de la hora extra festiva + 127%.";
                 break;
             default:
                 outputText = "Opción no válida";
@@ -77,6 +73,7 @@ function calculate() {
     } else {
         outputText = "Categoría no válida";
     }
+    
 
     if (outputText === "") {
         const montoBruto = rate * horas;
@@ -84,34 +81,29 @@ function calculate() {
 
         outputText = `${montoBruto.toFixed(2)} € Bruto`;
 
-        // Agregar el resultado al array de resultados
         resultadosHorasExtras.push({
             horas: horas,
             tipo: tipoHoraExtra,
             monto: montoBruto
         });
 
-        // Llama automáticamente a la función sumHours para actualizar los resultados
         sumHours();
     }
 
     document.getElementById('output').innerHTML = outputText;
 
-    // Muestra el texto explicativo
     document.getElementById('explanation').textContent = explanationText;
 }
 
-//...
+
 
 function sumHours() {
-    // Mostrar la suma en la calculadora de suma de horas extras
     const totalSuma = resultadosHorasExtras.reduce((total, resultado) => total + resultado.monto, 0);
 
     document.getElementById('sumOutput').textContent = `Horas Extras Totales: ${totalSuma.toFixed(2)} € Bruto`;
 
-    // Mostrar el tipo de hora extra en la lista
     const sumList = document.getElementById('sumList');
-    sumList.innerHTML = ''; // Borra la lista actual
+    sumList.innerHTML = ''; 
 
     for (const resultado of resultadosHorasExtras) {
         const listItem = document.createElement('div');
