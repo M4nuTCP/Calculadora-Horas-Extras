@@ -10,19 +10,16 @@
     <div id="container">
         <h1>CALCULADORA DE HORAS EXTRAS</h1>
 
-        <!-- Selector de categoría -->
         <label for="category">Categoría</label>
         <select id="category">
             <option value="1">Técnico</option>
             <option value="2">Control</option>
         </select>
 
-        <!-- Entrada de número de horas extraordinarias -->
         <label for="horas">Número de Horas Extraordinarias</label>
         <input type="number" id="horas">
         <br>
 
-        <!-- Selector de opciones de horas extras -->
         <label for="menu">Menú de Opciones</label>
         <select id="menu">
             <option value="0">Selecciona una opción</option>
@@ -35,32 +32,25 @@
         </select>
         <br>
 
-        <!-- Botón de cálculo -->
         <button onclick="calculate()">Calcular</button>
 
-        <!-- Resultado de cálculo de horas extras -->
         <div id="output"></div>
 
-        <!-- Explicación del cálculo -->
         <div>
             <p id="explanation" style="font-size: 14px; color: #333;"></p>
         </div>
         
-        <!-- Mensaje informativo -->
         <p id="message" style="font-size: 14px; color: #333;"></p>
     </div> 
 
-    <!-- Contenedor de horas extras -->
     <div id="horasExtrasContainer"></div>
         
-    <!-- Calculadora de suma de horas extras -->
     <div id="sumCalculator">
         <h2>TOTAL DE HORAS EXTRAS</h2>
         <ul id="sumList"></ul>
         <div id="sumOutput"></div>
     </div>
 
-    <!-- Firma -->
     <div id="firma">Víctor Manuel Gálan Sánchez</div>
 
     <script src="index.js"></script>
